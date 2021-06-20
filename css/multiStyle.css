@@ -1,0 +1,39 @@
+:root {
+   --variableNameExample: valueExample;
+   --schemeColor0: #000000; /* Black */
+   --schemeColor1: #7878ff; /* Dark Blue */
+   --schemeColor2: #cdcdff; /* Light Blue */
+   --schemeColor3: #cdcdcd; /* Light Grey */
+   --schemeColor4: #898989; /* Dark Grey */
+   --schemeColor5: #ffffff; /* White */
+   --textColor1: var(--schemeColor1);
+   --bgColor1: var(--schemeColor2);
+   --textColor2: var(--schemeColor3);
+   --bgColor2: var(--schemeColor4);
+}
+
+*{border:0px dotted red;}
+
+/* default style for smaller/mobile devices */
+body{
+    background-color: var(--schemeColor5);
+    color: var(--schemeColor0);
+}
+
+/* tablet devices /
+@media screen and (min-width: 480px){
+
+}*/
+
+/* laptop devices */
+@media screen and (min-width: 768px){
+    body{
+        background-color: var(--schemeColor0);
+        color: var(--schemeColor5);
+    }
+}
+
+/* desktop/larger devices
+@media screen and (min-width: 1024px){
+
+}*/

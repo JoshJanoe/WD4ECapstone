@@ -1,0 +1,198 @@
+:root {
+   /*--variableNameExample: valueExample;*/
+   --schemeColor0: #000000; /* Black */
+   --schemeColor1: #7878ff; /* Dark Blue */
+   --schemeColor2: #cdcdff; /* Light Blue */
+   --schemeColor3: #cdcdcd; /* Light Grey */
+   --schemeColor4: #898989; /* Dark Grey */
+   --schemeColor5: #ffffff; /* White */
+   --textColor1: var(--schemeColor1);
+   --bgColor1: var(--schemeColor2);
+   --textColor2: var(--schemeColor3);
+   --bgColor2: var(--schemeColor4);
+}
+
+*{border:0px dotted red;}
+
+body {
+   background-color: var(--schemeColor5);
+   color: var(--schemeColor0);
+   font-size: 1em;
+   font-variant: small-caps;
+}
+
+.myNav {
+    color: white;
+}
+
+header section {
+    padding: 1.5em;
+}
+
+section {
+    padding: .5em;
+}
+
+h4 {
+    margin: 1em;
+}
+
+.newDropdown {
+    background-color: var(--schemeColor2);
+}
+
+nav {
+    background-color: var(--schemeColor1);
+}
+
+nav .navbar-nav li a{
+  color: var(--schemeColor2);
+  font-size: 1.125em;
+}
+
+nav .navbar-nav li ul li a{
+  color: var(--schemeColor4);
+  font-size: 1.125em;
+}
+
+h1 {
+   font-size: 3em;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+.myPic {
+    width: 20rem;
+    height: 20rem;
+    background-size: 20rem;
+    background-repeat: no-repeat;
+    background-image: url("../images/jjj4.png");
+}
+
+.myPic:hover {
+    background-image: url("../images/jjj4color.png");
+}
+
+.card ul {
+    list-style-type: circle;
+}
+
+#experience ul {
+   list-style-type: circle;
+}
+
+#education ol {
+    margin-top: 1em;
+}
+
+section:nth-child(odd) {
+    background-color: var(--bgColor1);
+    color: var(--textColor1);
+}
+
+section:nth-child(even) {
+    background-color: var(--bgColor2);
+    color: var(--textColor2);
+}
+
+a {
+    font-size: 1em;
+    color: var(--schemeColor0);
+    text-decoration: none;
+    transition: background-color .75s, color .75s;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+h2 {
+    border-radius: .25em;
+    padding-left: 1em;
+    margin: .5em;
+    }
+
+section:nth-child(odd) h2 {
+    background-color: var(--schemeColor1);
+    color: var(--schemeColor2);
+}
+
+section:nth-child(even) h2 {
+    background-color: var(--schemeColor3);
+    color: var(--schemeColor4);
+}
+
+hr {
+    margin: 2em;
+}
+
+footer {
+   color: var(--textColor0);
+   background-color: var(--bgColor5);
+   margin-top: 2em;
+}
+
+.viewCerts {
+    background-color: white;
+    border-radius: .5em;
+    width: 50%;
+    margin: auto;
+}
+
+#experience img, #certs img, #education img {
+    width: 10rem;
+    height: 10rem;
+}
+
+#portfolio img, #portfolio a {
+    width: 5rem;
+    height: 5rem;
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23777' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23777' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.back-to-top {
+    margin: 1em;
+}
+
+form {
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+label {
+    margin: .25em;
+}
+
+#contact p, #contact button {
+    margin-bottom: 0px;
+    margin-top: 1em;
+    width: 100%;
+}
+
+#contact button {
+    margin-bottom: 0px;
+    margin-top: 1em;
+    width: 20%;
+}
+
+@media (min-width: 480px){
+    #skills ul, #certs ul {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 1200px){
+    #skills ul, #certs ul {
+        column-count: 2;
+    }
+}
